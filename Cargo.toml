@@ -1,0 +1,16 @@
+[package]
+name = "kiss"
+version = "0.1.0"
+edition = "2021"
+authors = ["kumavale"]
+description = "Sends a unix signal to the specified process id"
+license = "MIT"
+repository = "https://github.com/kumavale/kiss"
+readme = "README.md"
+keywords = ["signal", "unix", "cli"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nix = { version = "0.26", features = ["signal"] }
